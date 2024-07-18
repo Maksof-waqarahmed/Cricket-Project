@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cricket Project</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="center_div">
+            <div class="content_container">
+                <div class="balls_option_div">
+                    <div class="ball_div">
+                        <button onclick="runs(this)" class="btn" value="1">1</button>
+                        <button onclick="runs(this)" class="btn" value="2">2</button>
+                        <button onclick="runs(this)" class="btn" value="3">3</button>
+                        <button onclick="runs(this)" class="btn" value="4">4</button>
+                        <button onclick="runs(this)" class="btn" value="5">5</button>
+                        <button onclick="runs(this)" class="btn" value="6">6</button>
+                    </div>
+                    <div class="options">
+                        <button onclick="runs(this)" class="btn_options" value=".">Dot Ball</button>
+                        <button onclick="runs(this)" class="btn_options" value="W">Wicket</button>
+                        <button onclick="runs(this)" class="btn_options" value="WD">Wide</button>
+                        <button onclick="runs(this)" class="btn_options" value="NB">No Ball</button>
+                        <button onclick="startNewOver()" class="btn_options" id="startNewOver">New Over</button>
+                    </div>
+                </div>
+                <div class="runs_count_div" id="runs_div">
+                    <p class="text_runs" id="team1">Team 1</p>
+                    <p class="text_runs" id="team2">Team 2, Yet to bat</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
